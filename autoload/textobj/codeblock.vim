@@ -10,7 +10,7 @@ function! textobj#codeblock#outer() abort
   return ['V', [0, l:head, 1, 0], [0, l:tail, 1, 0]]
 endfunction
 
-function! textobj#codeblock#innter() abort
+function! textobj#codeblock#inner() abort
   let l:head = search('```\s\?\w*\s*$', 'Wb')
   let l:tail = search('```\s*$', 'W')
   if l:head ==# 0 || l:tail ==# 0

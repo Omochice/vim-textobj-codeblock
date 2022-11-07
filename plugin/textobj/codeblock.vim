@@ -9,7 +9,7 @@ set cpo&vim
 call textobj#user#plugin('codeblock', {
       \ '-': {
       \   'select-a': [], 'select-a-function': 'textobj#codeblock#outer',
-      \   'select-i': [], 'select-i-function': 'textobj#codeblock#innter',
+      \   'select-i': [], 'select-i-function': 'textobj#codeblock#inner',
       \ },
       \ })
 
